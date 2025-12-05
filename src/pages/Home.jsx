@@ -1,4 +1,8 @@
 import React from "react";
+import ServicesCarousel from "../component/ServicesCarousel";
+
+
+
 
 const Home = () => {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -15,7 +19,9 @@ const Home = () => {
         }`}
       >
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-7xl font-extrabold mb-6 pt-7 md:pt-0">
+
+          <section className="text-center px-4">
+            <h2 className="text-4xl md:text-7xl font-extrabold mb-6 pt-7 md:pt-0">
             Infrastructure Intelligence for Modern Projects
           </h2>
           <p className="text-lg md:text-2xl text-gray-600">
@@ -29,6 +35,13 @@ const Home = () => {
               Contact Us
             </a>
           </div>
+          </section>
+          <section className="mt-20">
+          <ServicesCarousel />
+
+          </section>
+    
+          
         </div>
       </section>
     </main>
