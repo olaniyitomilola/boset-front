@@ -4,7 +4,7 @@ import Body from '../component/Body';
 
 const Layout = () => {
     return (
-        <div className="layout-container flex flex-col h-screen select-none">
+        <div className="layout-container flex flex-col overflow-x-hidden select-none">
             <Header />
             <Body />
         </div>

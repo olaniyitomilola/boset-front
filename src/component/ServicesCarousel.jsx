@@ -25,7 +25,7 @@ export default function ServicesCarousel() {
   };
 
   return (
-    <section className="w-full max-w-6xl mx-auto py-12 px-4">
+    <section className="w-full max-w-6xl mx-auto py-12 px-4 ">
       <div className="rounded-[12px] bg-[#05060a] py-10 px-2 md:px-4">
         <div className="relative h-[260px] md:h-[320px] lg:h-[360px] max-w-5xl mx-auto">
           {bosetServices.map((service, index) => (
