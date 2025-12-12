@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <main className="flex flex-col min-h-screen bg-white text-gray-900">
       <section 
-        className={`w-full py-32 transition-all duration-1000 transform ${
+        className={`w-full py-8 md:py-22 transition-all duration-1000 transform ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
@@ -36,7 +36,7 @@ const Home = () => {
             </a>
           </div>
           </section>
-          <section className="mt-20">
+          <section className="mt-5 md:mt-20">
           <ServicesCarousel />
 
           </section>
