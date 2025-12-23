@@ -3,11 +3,11 @@ import NavLink from './NavLink';
 import logo from '../assets/logo.png'; // Adjust if your path is different
 
 const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'Services', path: '/wedding' },
-  { name: 'Portfolio', path: '/studio' },
-  { name: 'About', path: '/about' },
-  { name: 'Contact Us', path: '/contact' },
+  { name: 'home.', path: '/' },
+  { name: 'what we do.', path: '/wedding' },
+  { name: "what we've done.", path: '/studio' },
+  { name: 'who we are.', path: '/about' },
+  { name: 'get in touch.', path: '/contact' },
 ];
 
 const Header = () => {
@@ -42,7 +42,7 @@ const Header = () => {
           <a href="/"><img src={logo} alt="Logo" className="h-12" /></a>
           
           {/* Navigation (right) */}
-          <nav className="flex space-x-16 text-lg">
+          <nav className="flex flex-1 justify-around text-sm lg:text-lg xl:text-xl 2xl:text-2xl ">
             {navLinks.map((link) => (
               <NavLink key={link.name} name={link.name} path={link.path} />
             ))}
